@@ -1,23 +1,28 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const [greeting] = useState('This is state, Welcome to Hooks! ')
+  const [userInput, setUserInput] = useState('')
+
+  const userInputHandler = (event) => {
+    setUserInput(event.target.value)
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+         {greeting}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org/docs/hooks-intro.html"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Hooks
-        </a>
+
+        <input type="text" onChange={userInputHandler} placeholder="type to see state changes"/>
+        <p>
+          {userInput}
+        </p>
+
       </header>
     </div>
   );
