@@ -22,7 +22,7 @@ function App() {
         <p>
           {userInput}
         </p>
-
+        <p>Build another component and pass it props from this components useState state</p>
       </header>
     </div>
   );
