@@ -41,3 +41,37 @@ const Hooks = () => {
 };
 
 export default Hooks;
+
+// import React, {useState} from "react";
+// import "./styles.css";
+
+// const list = [
+//   "Berries",
+//   "Apples",
+//   "Bananas",
+//   "Pineapples",
+//   "Coconut",
+//   "Mangos",
+//   "Grapes",
+//   "Melons",
+//   "Plums"
+// ];
+
+// function App() {
+//   const [input, setInput] = useState("");
+
+//   const inputHandler = event => setInput(event.target.value);
+
+//   const fruit = list
+//     .filter(element => element.toLowerCase().includes(input))
+//     .map((element, index) => <h3 key={index}>{element}</h3>);
+
+//   return (
+//     <div className="App">
+//       <h1>Hello CodeSandbox</h1>
+//       <h2>Start editing to see some magic happen!</h2>
+//       <input type="text" onChange={inputHandler} />
+//       {fruit}
+//     </div>
+//   );
+// }
